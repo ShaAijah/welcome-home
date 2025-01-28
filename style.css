@@ -9,3 +9,12 @@ body {
     background-image: url("velvet.jpg");
     background-size: 100%;
 }
+
+a {
+    color:crimson;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    position: relative;
+    left: 100px;
+    top: 150px;
+}
