@@ -1,0 +1,26 @@
+/* color refers to the text color not the background */
+body {
+    background-color:rgb(192, 223, 192);
+    font: size 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1 {
+    font-size: 36px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+p {
+    color:hotpink;
+    background-color:rgb(217, 236, 213);
+    font-size: 14px;
+    border:1px double rgb(76, 94, 74);
+    padding: 8px;
+    text-align: justify;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+}
+
+img {
+    max-width: 100%;
+    align-items: center;
+}
