@@ -1,20 +1,56 @@
 h1 {
-    color:rgb(204, 177, 188);
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(204, 177, 188);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     font-size: 42px;
-    
+    text-shadow: 2px 2px 5px pink;
 }
 
 body {
-    background-image: url("velvet.jpg");
-    background-size: 100%;
+    background-image: url("zebra.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    text-align: center;
 }
 
 a {
-    color:crimson;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: rgb(124, 46, 212);
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 20px;
     position: relative;
-    left: 100px;
-    top: 150px;
+    margin: 20px;
+    text-decoration: none;
+}
+
+a:hover {
+    color: gold;
+    text-shadow: 1px 1px 5px white;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    border: 5px dashed pink;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 20px;
+    box-shadow: 5px 5px 20px white;
+}
+
+img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 3px solid white;
+}
+
+.marquee {
+    font-size: 18px;
+    font-weight: bold;
+    color: yellow;
+}
+
+.glitter-text {
+    font-size: 24px;
+    color: hotpink;
+    text-shadow: 2px 2px 5px white;
 }

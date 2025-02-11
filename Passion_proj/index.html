@@ -1,32 +1,51 @@
-<!doctype html>
+<<!DOCTYPE html>
 <html>
-    <head>
-        <title>Passions</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>Sha'Aijah's realm</h1>
-        <h2>I LOVE MUSIC</h2>
-        
-        <a href="https://open.spotify.com/user/8dmd47f252duz4sz0ktsvcksi?si=52bdb2383d0a4164">My Spotiy:)</a>
-
-
-        <p>Music has always been something that I have seen as comforting. It has the power to both evoke emotion and soothe heavy feelings. I cannot go a day without almost constanly listen to music. I love exploring different generes and hearing about artists stories. If God gave me the ability to sing I would absolutely be going down a different career path.  Music helps me think, process, and feel. It comfots me when im sad, calms me when im anxious, it gives me energy when I need motivation. It's a collection of sounds that is like a universal language that speaks to us all, but in different ways and that's what makes it so beautiful. Without music life would be colorless and bland. Music is my therapy. </p>
-
-        <img src="s">
-
-        <h3>Here are some of my Spotify Wrapped Top Songs</h3>
-        <ol>
-            <li> Juna By Clairo </li>
-            <li> Sierra Leone By Frank Ocean</li>
-            <li>FAMJAM4000 by Jordan Ward </li>
-            <li>Prom By SZA</li>
-            <li> Kingston by Fay Webster</li>
-        </ol>
-
-        <img src= "album.webp"> 
-    </body>
-<audio controls>
-    <source src="Learn to Love - Cleopold.mp3" typye="audio/mpeg>"
-</audio>
+<head>
+    <title>Sha'Aijah's Music Realm</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Sha'Aijah's Realm</h1>
+    <h2>I LOVE MUSIC</h2>
+    
+    <a href="https://open.spotify.com/user/8dmd47f252duz4sz0ktsvcksi?si=52bdb2383d0a4164" target="_blank">My Spotify :)</a>
+    
+    <p>Music has always been my greatest source of comfort. It has the unique power to stir emotions, heal heavy hearts, and bring a sense of peace. I can’t go a day without it, it’s the rhythm of my life. I love diving into different genres, discovering new sounds, and learning the stories behind the artists who create them. If I had been blessed with the ability to sing, I know my path would look entirely different. Music helps me think, process, and truly feel. It lifts me when I’m down, soothes my anxiety, and fuels my motivation when I need it most. It’s a universal language that speaks to each of us in our own way, and that’s what makes it so extraordinary. Without music, life would feel dull and incomplete. For me, music isn’t just a pastime, it’s therapy.</p>
+    
+    <h3>Here are some of my Spotify Wrapped Top Songs</h3>
+    <ol>
+        <li>Juna - Clairo</li>
+        <li>Sierra Leone - Frank Ocean</li>
+        <li>FAMJAM4000 - Jordan Ward</li>
+        <li>Prom - SZA</li>
+        <li>Kingston - Faye Webster</li>
+    </ol>
+    
+    <img src="album.webp" alt="Album cover">
+    
+    <div id="music-container">
+        <h3>Music Player</h3>
+        <audio controls>
+            <source src="Learn_to_Love_Cleopold.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+        </audio>
+    
+        <h3>Playlist</h3>
+        <ul id="playlist">
+            <li><button onclick="playSong('Clairo.mp3')">Song 1</button></li>
+            <li><button onclick="playSong('FrankOcean.mp3')">Song 2</button></li>
+            <li><button onclick="playSong('JordanWard.mp3')">Song 3</button></li>
+            <li><button onclick="playSong('SZA.mp3')">Song 4</button></li>
+            <li><button onclick="playSong('Faye.mp3')">Song 5</button></li>
+        </ul>
+    </div>
+    
+    <script>
+        function playSong(song) {
+            let audioPlayer = document.querySelector('audio');
+            audioPlayer.src = song;
+            audioPlayer.play();
+        }
+    </script>
+</body>
 </html>
