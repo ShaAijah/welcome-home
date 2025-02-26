@@ -1,33 +1,36 @@
-// script.js
+// Wait for the DOM to load before running the script
+document.addEventListener('DOMContentLoaded', function () {
 
-// Get the modal element
-var modal = document.getElementById("image-modal");
-// Get the image element inside the modal
-var modalImg = document.getElementById("modal-img");
-// Get the caption element
-var captionText = document.getElementById("modal-caption");
-// Get all scrapbook images
-var images = document.querySelectorAll(".scrapbook-item img");
-// Get the close button
-var span = document.getElementsByClassName("close")[0];
+    // Get the modal element
+    var modal = document.getElementById("image-modal");
+    // Get the image element inside the modal
+    var modalImg = document.getElementById("modal-img");
+    // Get the caption element
+    var captionText = document.getElementById("modal-caption");
+    // Get all scrapbook images
+    var images = document.querySelectorAll(".scrapbook-item img");
+    // Get the close button
+    var span = document.getElementsByClassName("close")[0];
 
-// Loop through each image to add a click event
-images.forEach(function(image) {
-    image.addEventListener("click", function() {
-        modal.style.display = "block";  // Show the modal
-        modalImg.src = this.src;       // Set the clicked image as modal content
-        captionText.innerHTML = this.alt; // Set the caption (optional)
+    // Loop through each image to add a click event
+    images.forEach(function (image) {
+        image.addEventListener("click", function () {
+            modal.style.display = "block";  // Show the modal
+            modalImg.src = this.src;       // Set the clicked image as modal content
+            captionText.innerHTML = this.alt; // Set the caption (optional)
+        });
     });
-});
 
-// When the user clicks the close button, close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
-
-// Close the modal if the user clicks outside of the modal content
-window.onclick = function(event) {
-    if (event.target == modal) {
+    // When the user clicks the close button, close the modal
+    span.onclick = function () {
         modal.style.display = "none";
     }
-}
+
+    // Close the modal if the user clicks outside of the modal content
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+
+});
