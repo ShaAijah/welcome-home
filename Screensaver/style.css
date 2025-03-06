@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.screensaver {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+}
+
+.blob {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    background: radial-gradient(circle, rgba(0, 255, 255, 0.7) 10%, transparent 70%);
+    border-radius: 50%;
+    animation: moveAround 10s infinite alternate ease-in-out, 
+               colorShift 12s infinite alternate, 
+               sizeChange 15s infinite alternate, 
+               fade 18s infinite alternate;
+}
+
+.blob:nth-child(2) {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(255, 0, 255, 0.7) 10%, transparent 70%);
+    animation-duration: 12s, 14s, 18s, 20s;
+}
+
+.blob:nth-child(3) {
+    width: 250px;
+    height: 250px;
+    background: radial-gradient(circle, rgba(255, 255, 0, 0.7) 10%, transparent 70%);
+    animation-duration: 14s, 16s, 20s, 22s;
+}
+
+.blob:nth-child(4) {
+    width:100px;
+    height: 100px;
+    background: radial-gradient(circle, rgb(187, 255, 0) 10%, transparent 70%);
+    animation-duration: 8s, 10s, 14s, 18ss,;
+}
+
+@keyframes moveAround {
+    0% {
+        top: 10%;
+        left: 10%;
+    }
+    25% {
+        top: 10%;
+        left: 80%;
+    }
+    50% {
+        top: 80%;
+        left: 80%;
+    }
+    75% {
+        top: 80%;
+        left: 10%;
+    }
+    100% {
+        top: 10%;
+        left: 10%;
+    }
+}
+
+@keyframes colorShift {
+    0%, 100% {
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        filter: hue-rotate(180deg);
+    }
+}
+
+@keyframes sizeChange {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
