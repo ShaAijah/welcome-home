@@ -1,0 +1,63 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-image: url('room.jpg');
+    background-position: center;
+   background-size: cover;
+}
+
+h1 {
+    color: #f592d4;
+}
+
+.container {
+    margin-top: 50px;
+}
+
+.character {
+    position: relative;
+    width: 300px; /* Increase from 250px */
+    height: 480px; /* Adjusted for better proportions */
+    margin: auto;
+}
+
+
+.character img {
+    position: absolute;
+    width: 150%;
+    height: auto;
+    left: 0;
+    top: 0;
+}
+
+/* Set correct z-index so everything stacks in the right order */
+#avatar {
+    position: relative;
+    z-index: 1;
+}
+
+#hair {
+    z-index: 3;
+}
+
+#outfit {
+    z-index: 2;
+}
+
+#accessory {
+    z-index: 4;
+}
+
+button {
+    margin: 10px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    background-color: #f705a6;
+    color: white;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #8b0960;
+}

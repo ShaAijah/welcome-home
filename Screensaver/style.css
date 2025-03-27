@@ -12,6 +12,7 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
+    animation: skew 15s infinite alternate ease-in-out;
 }
 
 .screensaver {
